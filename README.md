@@ -16,11 +16,11 @@ In order to use it, it needs to be configured with a valid GitHub authentication
 https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/ to generate a new token -- make sure
 that it has the `repo` access.
 
-Once you have the token, run `IssueReporter.configure(<your_access_token_here>)` to configure the package.
+Once you have the token, run `IssueReporter.configure(your_access_token_here)` to configure the package.
 The token is stored in a file called `secrets.jl` which is added to `.gitignore`.
 
 You can now open issues by calling:
-`IssueReporter.report("<Julia package name>", "<issue title>", "<issue body>")
+`IssueReporter.report("Julia package name", "issue title", "issue body")
 
 
 - [IssueReporter.jl Documentation](index.md#IssueReporter.jl-Documentation-1)
